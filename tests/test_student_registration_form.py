@@ -19,7 +19,7 @@ def test_student_registration_form():
     browser.element("label[for='hobbies-checkbox-1']").should(be.visible).click()
     browser.element("label[for='hobbies-checkbox-2']").should(be.visible).click()
     browser.element("label[for='hobbies-checkbox-3']").should(be.visible).click()
-    browser.element("#uploadPicture").should(be.visible).type(os.path.abspath("../pictures/picture.png"))
+    browser.element("#uploadPicture").should(be.visible).type(os.path.abspath("pictures/picture.png"))
     browser.element("#currentAddress").should(be.visible).type("Palace Square, 2, St Petersburg, 190000")
     browser.element("#react-select-3-input").should(be.visible).type("NCR").press_enter()
     browser.element("#react-select-4-input").should(be.visible).type("Delhi").press_enter()
